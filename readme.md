@@ -66,7 +66,7 @@ for i in range(9):
 
 
     
-![png](output_11_0.png)
+![png](doc/output_11_0.png)
     
 
 
@@ -185,7 +185,7 @@ for i in range(9):
 
 
     
-![png](output_22_0.png)
+![png](doc/output_22_0.png)
     
 
 
@@ -326,7 +326,7 @@ plot_Nfigs(3,3,x_sample,y_sample,predictions)
 
 
     
-![png](output_40_0.png)
+![png](doc/output_40_0.png)
     
 
 
@@ -381,6 +381,6 @@ if N==9:
 
 
     
-![png](output_45_1.png)
+![png](doc/output_45_1.png)
     
 
