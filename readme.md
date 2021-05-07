@@ -1,5 +1,7 @@
 # MNIST reinterpreted by Eli
+* My blog post: https://projecteli.tistory.com/183
 
+refs:
 * Basic code: https://www.tensorflow.org/overview
 * plot method: https://www.tensorflow.org/tutorials/load_data/images
 * visualization for mnist: https://webnautes.tistory.com/1232
