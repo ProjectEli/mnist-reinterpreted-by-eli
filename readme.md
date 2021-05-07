@@ -55,7 +55,8 @@ print(y_train.shape)
 
 ```python
 import matplotlib.pyplot as plt
-plt.figure(figsize=(10,10))
+fig1= plt.figure(figsize=(10,10))
+fig1.patch.set_facecolor('xkcd:white')
 for i in range(9):
     ax = plt.subplot(3,3,i+1)
     plt.imshow(x_train[i],cmap='Greys')
@@ -65,7 +66,7 @@ for i in range(9):
 
 
     
-![png](doc/output_11_0.png)
+![png](output_11_0.png)
     
 
 
@@ -138,31 +139,31 @@ model.fit(x_train,y_train,epochs=10)
 ```
 
     Epoch 1/10
-    1875/1875 [==============================] - ETA: 0s - loss: 0.4881 - accuracy: 0.8554 ETA: 1s - loss: 0.9678 - accuracy: 0. - ETA: 1s - loss: 0.8640 - accuracy:  - ETA: 1s - loss: 0.7544 - accuracy: 0.77 - ETA: 1s - loss: 0.7275 - accuracy: 0.78 - ETA: 0s - loss: 0.7019 - accuracy:  - ETA: 0s - loss: 0.6497 - accuracy: 0. - ETA: 0s - loss: 0.6187 - accuracy: 0.81 - ETA: 0s - loss: 0.6056 - accuracy: 0. - ETA: 0s - loss: 0.5862 -  - ETA: 0s - loss: 0.5180 - accuracy: 0.84 - ETA: 0s - loss: 0.5102 - accuracy: 0.84 - ETA: 0s - loss: 0.5027 - accuracy:  - 2s 895us/step - loss: 0.4813 - accuracy: 0.8574
+    1875/1875 [==============================] - 2s 914us/step - loss: 0.4928 - accuracy: 0.85591s - loss: 0.7431 - accura - ETA: 0s - loss: 0.6594 - accuracy:  - ETA: 0s - loss: 0.6171 - accuracy: 0.81 - ETA: 0s - loss: 0.6043 - accuracy: 0.82 - ETA: 0s - loss: 0.5919 - accuracy: 0.82 - ETA: 0s - loss: 0.5808 - accuracy: 0. - ETA: 0s - loss: 0.5609 - accuracy: 0. - ETA: 0s - loss: 0.5425 - accuracy: 0.84 - ETA: 0s - loss: 0.5341 - accuracy - ETA: 0s - loss: 0.5040 - accuracy: 0.
     Epoch 2/10
-    1875/1875 [==============================] - ETA: 0s - loss: 0.1508 - accuracy: 0.9556 ETA: 1s - loss: 0.1478 - accuracy:  - ETA: 1s - loss: 0.1441 - accuracy: 0. - ETA: 1s - loss: 0.1486 - accuracy: 0. - ETA: 1s - loss: 0.1513 - accuracy: 0. - ETA: 1s - loss: 0.1525 - accuracy:  - ETA: 0s - loss: 0.1534 - accuracy: 0.95 - ETA: 0s - loss: 0.1535 - accuracy: 0.95 - ETA: 0s - loss: 0.1535 - accuracy: 0. - ETA: 0s - loss: 0.1533 - accuracy: 0. - ETA: 0s - loss: 0.1531 - accuracy: 0.95 - ETA: 0s - loss: 0.1530 - accuracy: 0. - ETA: 0s - loss: 0.1527 - accuracy: 0.95 - ETA: 0s - loss: 0.1524 - accuracy - ETA: 0s - loss: 0.1515 - accuracy: 0.95 - ETA: 0s - loss: 0.1512 - accuracy: 0.95 - ETA: 0s - loss: 0.1510 - accuracy: 0. - 2s 835us/step - loss: 0.1506 - accuracy: 0.9557
+    1875/1875 [==============================] - 2s 946us/step - loss: 0.1498 - accuracy: 0.95531s - loss: 0.1892 - accuracy: 0.93 - ETA: 1s - loss: 0.1838 - accuracy: 0.94 - ETA: 1s - loss: 0.1785 - accuracy: 0.94 - ETA: 1s - loss: 0.1740 - accuracy - ETA: 1s - loss: 0.1629 - accuracy: 0. - ETA: 1s - loss: 0.1600 - accuracy: 0. - ETA: 1s - loss: 0.1578 - accuracy: 0.95 - ETA: 1s - loss: 0.1568 - accuracy: 0. - ETA: 1s - loss: 0.1554 - accuracy:  - ETA: 0s - loss: 0.1539 - accuracy: 0. - ETA: 0s - loss: 0.1531 - accuracy: 0. - ETA: 0s - loss: 0.1525 - accuracy: 0.95 - ETA: 0s - loss: 0.1522 - accuracy: 0.95 - ETA: 0s - loss: 0.1520 - accuracy:  - ETA: 0s - loss: 0.1513 - accuracy: 0.95 - ETA: 0s - loss: 0.1511 - accuracy: 0.95 - ETA: 0s - loss: 0.1509 - accuracy:  - ETA: 0s - loss: 0.1503 - accuracy: 0.95 - ETA: 0s - loss: 0.1501 - accuracy: 0.95 - ETA: 0s - loss: 0.1499 - accuracy: 0.95
     Epoch 3/10
-    1875/1875 [==============================] - 2s 873us/step - loss: 0.1041 - accuracy: 0.96831s - loss: 0.0897 - accuracy: 0.97 - ETA: 1s - loss: 0.0941 - accuracy: 0. - ETA: 1s - loss: 0.0971 - accuracy: 0.97 - ETA: 1s - loss: 0.0976 - accuracy:  - ETA: 1s - loss: 0.0989 - accuracy: 0.96 - ETA: 1s - loss: 0.0994 - accuracy: 0. - ETA: 1s - loss: 0.1007 - accuracy: 0. - ETA: 0s - loss: 0.1016 - accuracy: 0.96 - ETA: 0s - loss: 0.1020 - accuracy: 0.96 - ETA: 0s - loss: 0.1025 - accuracy: 0.96 - ETA: 0s - loss: 0.1029 - accuracy: 0. - ETA: 0s - loss: 0.1035 - accuracy: 0.96 - ETA: 0s - loss: 0.1036 - accuracy: 0.96 - ETA: 0s - loss: 0.1037 - accuracy: 0.96 - ETA: 0s - loss: 0.1038 - accuracy:  - ETA: 0s - loss: 0.1040 - accuracy: 0. - ETA: 0s - loss: 0.1041 - accuracy: 0. - ETA: 0s - loss: 0.1041 - accuracy: 0.96 - ETA: 0s - loss: 0.1041 - accuracy
+    1875/1875 [==============================] - 2s 908us/step - loss: 0.1114 - accuracy: 0.96521s - loss: 0.1092 - accuracy: 0.96 - ETA: 1s - loss: 0.1140 - accuracy: 0. - ETA: 1s - loss: 0.1175 - accuracy:  - ETA: 1s - loss: 0.1163 - accuracy: 0.96 - ETA: 1s - loss: 0.1162 - accu - ETA: 0s - loss: 0.1141 - accuracy: 0. - ETA: 0s - loss: 0.1138 - accuracy: 0.96 - ETA: 0s - loss: 0.1137 - accuracy: 0.96 - ETA: 0s - loss: 0.1135 - accuracy: 0.96 - ETA: 0s - loss: 0.1133 - accuracy - ETA: 0s - loss: 0.1126 - accuracy: 0. - ETA: 0s - loss: 0.1124 - accuracy: 0.96 - ETA: 0s - loss: 0.1123 - accuracy - ETA: 0s - loss: 0.1117 - accuracy: 0.96 - ETA: 0s - loss: 0.1116 - accuracy: 0.96 - ETA: 0s - loss: 0.1115 - accuracy: 0.
     Epoch 4/10
-    1875/1875 [==============================] - 2s 825us/step - loss: 0.0844 - accuracy: 0.97421s - loss: 0.0700 - accuracy - ETA: 1s - loss: 0.0785 - accuracy: 0.97 - ETA: 1s - loss: 0.0797 - accuracy:  - ETA: 1s - loss: 0.0820 - accuracy: 0.97 - ETA: 0s - loss: 0.0825 - accuracy: 0.97 - ETA: 0s - loss: 0.0830 - accuracy: 0. - ETA: 0s - loss: 0.0835 - accuracy: 0. - ETA: 0s - loss: 0.0836 - accuracy: 0.97 - ETA: 0s - loss: 0.0837 - accuracy: 0. - ETA: 0s - loss: 0.0839 - accuracy: 0. - ETA: 0s - loss: 0.0840 - accuracy:  - ETA: 0s - loss: 0.0841 - accuracy: 0.97 - ETA: 0s - loss: 0.0841 - accuracy - ETA: 0s - loss: 0.0843 - accuracy: 0.97 - ETA: 0s - loss: 0.0844 - accuracy: 0.97
+    1875/1875 [==============================] - ETA: 0s - loss: 0.0859 - accuracy: 0.9733 ETA: 1s - loss: 0.0799 - accuracy: 0.97 - ETA: 1s - loss: 0.0804 - accuracy: 0.97 - ETA: 1s - loss: 0.0808 - accuracy:  - ETA: 0s - loss: 0.0820 - accuracy: 0.97 - ETA: 0s - loss: 0.0823 - accuracy: 0.97 - ETA: 0s - loss: 0.0826 - accuracy: 0.97 - ETA: 0s - loss: 0.0829 - accuracy: 0. - ETA: 0s - loss: 0.0835 - accuracy: 0.97 - ETA: 0s - loss: 0.0838 - accuracy: 0. - ETA: 0s - loss: 0.0843 - accura - ETA: 0s - loss: 0.0852 - ac - 2s 888us/step - loss: 0.0860 - accuracy: 0.9733
     Epoch 5/10
-    1875/1875 [==============================] - 2s 870us/step - loss: 0.0698 - accuracy: 0.97711s - loss: 0.0633 - accuracy: 0.97 - ETA: 1s - loss: 0.0673 - accuracy:  - ETA: 1s - loss: 0.0682 - accuracy: 0.97 - ETA: 1s - loss: 0.0681 - accuracy: 0. - ETA: 1s - loss: 0.0678 - accuracy: 0. - ETA: 1s - loss: 0.0678 - accuracy:  - ETA: 0s - loss: 0.0680 - accuracy: 0. - ETA: 0s - loss: 0.0681 - accuracy: 0.97 - ETA: 0s - loss: 0.0681 - accuracy: 0.97 - ETA: 0s - loss: 0.0682 - accuracy: 0.97 - ETA: 0s - loss: 0.0683 - accuracy - ETA: 0s - loss: 0.0686 - accuracy: 0. - ETA: 0s - loss: 0.0689 - accuracy: 0.97 - ETA: 0s - loss: 0.0690 - accuracy: 0. - ETA: 0s - loss: 0.0693 - accuracy: 0.97 - ETA: 0s - loss: 0.0694 - accuracy: 0.97 - ETA: 0s - loss: 0.0695 - accuracy: 0.97 - ETA: 0s - loss: 0.0696 - accuracy: 0.97 - ETA: 0s - loss: 0.0697 - accuracy: 0.97 - ETA: 0s - loss: 0.0698 - accuracy: 0.97
+    1875/1875 [==============================] - 2s 930us/step - loss: 0.0759 - accuracy: 0.97681s - loss: 0.0942 - accuracy: 0.97 - ETA: 1s - loss: 0.0844 - accuracy:  - ETA: 1s - loss: 0.0780 - accu - ETA: 1s - loss: 0.0778 - accuracy - ETA: 0s - loss: 0.0776 - accuracy: 0.97 - ETA: 0s - loss: 0.0775 - accuracy: 0.97 - ETA: 0s - loss: 0.0773 - accuracy: 0. - ETA: 0s - loss: 0.0771 - accuracy: 0.97 - ETA: 0s - loss: 0.0770 - accuracy: 0.97 - ETA: 0s - loss: 0.0768 - accuracy:  - ETA: 0s - loss: 0.0764 - accuracy: 0.97 - ETA: 0s - loss: 0.0763 - accura - ETA: 0s - loss: 0.0760 - accuracy: 0.97 - ETA: 0s - loss: 0.0759 - accuracy: 0. - ETA: 0s - loss: 0.0759 - accuracy: 0.97 - ETA: 0s - loss: 0.0759 - accuracy: 0.97
     Epoch 6/10
-    1875/1875 [==============================] - 2s 814us/step - loss: 0.0626 - accuracy: 0.98051s - loss: 0.0606 - accuracy:  - ETA: 1s - loss: 0.0610 - accuracy: 0.98 - ETA: 1s - loss: 0.0613 - accuracy: 0.98 - ETA: 0s - loss: 0.0615 - accuracy - ETA: 0s - loss: 0.0619 - accuracy: 0. - ETA: 0s - loss: 0.0620 - accuracy: 0.98 - ETA: 0s - loss: 0.0621 - accuracy: 0.98 - ETA: 0s - loss: 0.0621 - accuracy: 0.98 - ETA: 0s - loss: 0.0621 - accuracy - ETA: 0s - loss: 0.0624 - accuracy: 0.98 - ETA: 0s - loss: 0.0624 - accuracy: 0. - ETA: 0s - loss: 0.0625 - accuracy: 0.98 - ETA: 0s - loss: 0.0626 - accuracy: 0. - ETA: 0s - loss: 0.0626 - accuracy: 0.98
+    1875/1875 [==============================] - 2s 879us/step - loss: 0.0648 - accuracy: 0.98001s - loss: 0.0627 - accuracy: 0.98 - ETA: 1s - loss: 0.0627 - accuracy: 0.98 - ETA: 1s - loss: 0.0627 - accuracy:  - ETA: 0s - loss: 0.0627 - accuracy: 0.98 - ETA: 0s - loss: 0.0628 - accuracy: 0. - ETA: 0s - loss: 0.0629 - accuracy:  - ETA: 0s - loss: 0.0633 - accuracy: 0. - ETA: 0s - loss: 0.0636 - accuracy: 0.98 - ETA: 0s - loss: 0.0637 - accuracy - ETA: 0s - loss: 0.0642 - accuracy: 0.98 - ETA: 0s - loss: 0.0643 - accuracy: 0.98 - ETA: 0s - loss: 0.0644 - accuracy: 0. - ETA: 0s - loss: 0.0646 - accuracy: 0.98 - ETA: 0s - loss: 0.0647 - accuracy: 0.
     Epoch 7/10
-    1875/1875 [==============================] - 2s 843us/step - loss: 0.0546 - accuracy: 0.98181s - loss: 0.0545 - accuracy - ETA: 1s - loss: 0.0547 - accuracy: 0.98 - ETA: 1s - loss: 0.0546 - accuracy - ETA: 1s - loss: 0.0542 - accuracy: 0.98 - ETA: 1s - loss: 0.0542 - accuracy - ETA: 0s - loss: 0.0544 - accuracy: 0.98 - ETA: 0s - loss: 0.0544 - accuracy:  - ETA: 0s - loss: 0.0543 - accuracy: 0.98 - ETA: 0s - loss: 0.0543 - accuracy: 0.98 - ETA: 0s - loss: 0.0543 - accuracy: 0.98 - ETA: 0s - loss: 0.0543 - accuracy: 0. - ETA: 0s - loss: 0.0543 - accuracy: 0.98 - ETA: 0s - loss: 0.0543 - accuracy: 0.98 - ETA: 0s - loss: 0.0544 - accuracy:  - ETA: 0s - loss: 0.0545 - accuracy: 0.98 - ETA: 0s - loss: 0.0545 - accuracy: 0.
+    1875/1875 [==============================] - 2s 898us/step - loss: 0.0581 - accuracy: 0.98161s - loss: 0.0553 - accuracy: 0. - ETA: 1s - loss: 0.0563 - accuracy: 0. - ETA: 1s - loss: 0.0567 - accuracy: 0.98 - ETA: 1s - loss: 0.0569 - accuracy: 0. - ETA: 1s - loss: 0.0571 - accuracy - ETA: 0s - loss: 0.0573 - accuracy: 0. - ETA: 0s - loss: 0.0574 - accuracy - ETA: 0s - loss: 0.0575 - accuracy: 0.98 - ETA: 0s - loss: 0.0575 - accuracy:  - ETA: 0s - loss: 0.0577 - accuracy: 0.98 - ETA: 0s - loss: 0.0577 - accuracy: 0. - ETA: 0s - loss: 0.0578 - accuracy: 0. - ETA: 0s - loss: 0.0579 - accuracy: 0.98 - ETA: 0s - loss: 0.0580 - accuracy: 0.98 - ETA: 0s - loss: 0.0580 - accuracy: 
     Epoch 8/10
-    1875/1875 [==============================] - 2s 840us/step - loss: 0.0473 - accuracy: 0.98481s - loss: 0.0498 - accu - ETA: 1s - loss: 0.0444 - accuracy: 0. - ETA: 1s - loss: 0.0446 - accuracy: 0. - ETA: 1s - loss: 0.0446 - accuracy - ETA: 0s - loss: 0.0452 - accuracy: 0.98 - ETA: 0s - loss: 0.0453 - accuracy: 0.98 - ETA: 0s - loss: 0.0454 - accuracy: 0. - ETA: 0s - loss: 0.0458 - accuracy: 0.98 - ETA: 0s - loss: 0.0460 - accuracy: 0.98 - ETA: 0s - loss: 0.0462 - accuracy:  - ETA: 0s - loss: 0.0467 - accuracy - ETA: 0s - loss: 0.0471 - accuracy: 0.98 - ETA: 0s - loss: 0.0472 - accuracy: 0.98 - ETA: 0s - loss: 0.0473 - accuracy: 0.98
+    1875/1875 [==============================] - 2s 888us/step - loss: 0.0521 - accuracy: 0.98291s - loss: 0.0587 - accuracy:  - ETA: 1s - loss: 0.0516 - accuracy: 0.98 - ETA: 1s - loss: 0.0512 - accura - ETA: 1s - loss: 0.0515 - accuracy: 0.98 - ETA: 1s - loss: 0.0516 - accuracy: 0.98 - ETA: 1s - loss: 0.0517 - accuracy: 0.98 - ETA: 1s - loss: 0.0518 - accuracy: 0.98 - ETA: 1s - loss: 0.0519 - accuracy: 0. - ETA: 0s - loss: 0.0520 - accuracy: 0.98 - ETA: 0s - loss: 0.0521 - accuracy: 0.98 - ETA: 0s - loss: 0.0521 - accuracy: 0.98 - ETA: 0s - loss: 0.0522 - accuracy: 0.98 - ETA: 0s - loss: 0.0522 - accuracy:  - ETA: 0s - loss: 0.0522 - accuracy:  - ETA: 0s - loss: 0.0521 - accuracy: 0.98 - ETA: 0s - loss: 0.0521 - accuracy: 0.98 - ETA: 0s - loss: 0.0521 - accuracy: 0. - ETA: 0s - loss: 0.0521 - accuracy: 0.98 - ETA: 0s - loss: 0.0521 - accuracy: 0.98 - ETA: 0s - loss: 0.0521 - accuracy: 0.98
     Epoch 9/10
-    1875/1875 [==============================] - 2s 843us/step - loss: 0.0428 - accuracy: 0.98561s - loss: 0.0413 - accuracy: 0.98 - ETA: 1s - loss: 0.0416 - accuracy: 0.98 - ETA: 1s - loss: 0.0413 - accuracy:  - ETA: 1s - loss: 0.0400 - accuracy:  - ETA: 1s - loss: 0.0399 - accuracy: 0.98 - ETA: 0s - loss: 0.0399 - accuracy: 0. - ETA: 0s - loss: 0.0401 - accuracy: 0.98 - ETA: 0s - loss: 0.0403 - accuracy: 0. - ETA: 0s - loss: 0.0407 - accuracy:  - ETA: 0s - loss: 0.0413 - accuracy: 0. - ETA: 0s - loss: 0.0415 - accuracy: 0.98 - ETA: 0s - loss: 0.0416 - accuracy: 0.98 - ETA: 0s - loss: 0.0417 - accuracy: 0.98 - ETA: 0s - loss: 0.0418 - accuracy: 0.98 - ETA: 0s - loss: 0.0420 - accuracy: 0.98 - ETA: 0s - loss: 0.0420 - accuracy: 0. - ETA: 0s - loss: 0.0423 - accuracy: 0.98 - ETA: 0s - loss: 0.0424 - accuracy: 0.98 - ETA: 0s - loss: 0.0425 - accuracy: 0.98 - ETA: 0s - loss: 0.0427 - accuracy: 0.
+    1875/1875 [==============================] - ETA: 0s - loss: 0.0460 - accuracy: 0.9851 ETA: 1s - loss: 0.0561 - accuracy - ETA: 1s - loss: 0.0479 - accuracy: 0.98 - ETA: 1s - loss: 0.0473 - accuracy: 0.98 - ETA: 1s - loss: 0.0469 - accuracy:  - ETA: 1s - loss: 0.0455 - accuracy: 0. - ETA: 1s - loss: 0.0451 - accuracy:  - ETA: 0s - loss: 0.0447 - accuracy: 0.98 - ETA: 0s - loss: 0.0447 - accuracy:  - ETA: 0s - loss: 0.0448 - accuracy: 0.98 - ETA: 0s - loss: 0.0448 - accuracy: 0. - ETA: 0s - loss: 0.0449 - accu - ETA: 0s - loss: 0.0455 - accura - ETA: 0s - loss: 0.0461 - accuracy: 0.98 - ETA: 0s - loss: 0.0462 - accuracy: 0.98 - 2s 946us/step - loss: 0.0462 - accuracy: 0.9850
     Epoch 10/10
-    1875/1875 [==============================] - ETA: 0s - loss: 0.0389 - accuracy: 0.9870 ETA: 1s - loss: 0.0351 - accuracy: 0.98 - ETA: 1s - loss: 0.0355 - accuracy: 0.98 - ETA: 1s - loss: 0.0357 - accuracy: 0.98 - ETA: 1s - loss: 0.0359 - accuracy: 0. - ETA: 1s - loss: 0.0367 - accuracy: 0. - ETA: 1s - loss: 0.0372 - accuracy: 0. - ETA: 0s - loss: 0.0374 - accuracy: 0.98 - ETA: 0s - loss: 0.0374 - accuracy: 0.98 - ETA: 0s - loss: 0.0375 - accuracy: 0. - ETA: 0s - loss: 0.0378 - accuracy: 0.98 - ETA: 0s - loss: 0.0378 - accuracy: 0.98 - ETA: 0s - loss: 0.0379 - accuracy: 0. - ETA: 0s - loss: 0.0381 - accuracy: 0. - ETA: 0s - loss: 0.0382 - accuracy: 0.98 - ETA: 0s - loss: 0.0383 - accura - ETA: 0s - loss: 0.0387 - accuracy: 0.98 - ETA: 0s - loss: 0.0388 - accuracy: 0. - 2s 826us/step - loss: 0.0389 - accuracy: 0.9869
+    1875/1875 [==============================] - 2s 885us/step - loss: 0.0443 - accuracy: 0.98531s - loss: 0.0374 - accuracy:  - ETA: 1s - loss: 0.0404 - accuracy: 0.98 - ETA: 1s - loss: 0.0411 - accuracy: 0.98 - ETA: 1s - loss: 0.0416 - accuracy: 0. - ETA: 1s - loss: 0.0420 - accuracy - ETA: 0s - loss: 0.0428 - accuracy: 0.98 - ETA: 0s - loss: 0.0430 - accuracy: 0.98 - ETA: 0s - loss: 0.0431 - accuracy: 0. - ETA: 0s - loss: 0.0434 - accura - ETA: 0s - loss: 0.0438 - accuracy: 0.98 - ETA: 0s - loss: 0.0439 - accuracy: 0.98 - ETA: 0s - loss: 0.0439 - accuracy - ETA: 0s - loss: 0.0441 - accuracy: 0.98 - ETA: 0s - loss: 0.0441 - accuracy:  - ETA: 0s - loss: 0.0443 - accuracy: 0.98
     
 
 
 
 
-    <tensorflow.python.keras.callbacks.History at 0x2a2290989d0>
+    <tensorflow.python.keras.callbacks.History at 0x2276ca73490>
 
 
 
@@ -173,7 +174,8 @@ model.fit(x_train,y_train,epochs=10)
 
 ```python
 import matplotlib.pyplot as plt
-plt.figure(figsize=(10,10))
+fig2 = plt.figure(figsize=(10,10))
+fig2.patch.set_facecolor('xkcd:white')
 for i in range(9):
     ax = plt.subplot(3,3,i+1)
     plt.imshow(x_test[i],cmap='Greys')
@@ -183,7 +185,7 @@ for i in range(9):
 
 
     
-![png](doc/output_22_0.png)
+![png](output_22_0.png)
     
 
 
@@ -194,13 +196,13 @@ for i in range(9):
 model.evaluate(x_test,y_test)
 ```
 
-    313/313 [==============================] - 0s 596us/step - loss: 0.0632 - accuracy: 0.9820
+    313/313 [==============================] - 0s 722us/step - loss: 0.0736 - accuracy: 0.9783
     
 
 
 
 
-    [0.06319496780633926, 0.9819999933242798]
+    [0.07363700866699219, 0.9782999753952026]
 
 
 
@@ -240,14 +242,14 @@ with numpy.printoptions(precision=2,suppress=True): # https://numpy.org/doc/stab
 
     (9, 10)
     [[  0.     0.     0.     0.     0.     0.     0.   100.     0.     0.  ]
-     [  0.     0.01  99.99   0.     0.     0.     0.     0.     0.     0.  ]
-     [  0.    99.99   0.     0.     0.     0.     0.     0.01   0.     0.  ]
-     [ 99.98   0.     0.     0.     0.     0.01   0.     0.01   0.     0.  ]
-     [  0.     0.     0.     0.    99.98   0.     0.     0.01   0.     0.01]
-     [  0.    99.94   0.     0.     0.     0.     0.     0.06   0.     0.  ]
-     [  0.     0.     0.     0.    99.99   0.     0.     0.     0.01   0.  ]
-     [  0.     0.     0.     0.01   0.07   0.     0.     0.     0.    99.91]
-     [  0.     0.     0.     0.     0.    60.05  39.94   0.     0.02   0.  ]]
+     [  0.     0.   100.     0.     0.     0.     0.     0.     0.     0.  ]
+     [  0.    99.91   0.     0.     0.     0.     0.     0.07   0.01   0.  ]
+     [100.     0.     0.     0.     0.     0.     0.     0.     0.     0.  ]
+     [  0.     0.     0.     0.    99.89   0.     0.     0.     0.     0.11]
+     [  0.    99.95   0.     0.     0.     0.     0.     0.05   0.     0.  ]
+     [  0.     0.     0.     0.    99.97   0.     0.     0.     0.01   0.03]
+     [  0.     0.     0.     0.01   0.04   0.     0.     0.     0.    99.95]
+     [  0.     0.     0.     0.     0.    99.99   0.01   0.     0.     0.  ]]
     
 
 ### prediction of most probable class names
@@ -312,7 +314,8 @@ def plot_value_array(predictions, true_label_index):
 ```python
 def plot_Nfigs(num_cols,num_rows,x_test,y_test,predictions):
     num_images = num_cols * num_rows
-    plt.figure(figsize=(2*2*num_cols,2*num_rows)) # first 2 is figsize, second 2 is two plots
+    figN = plt.figure(figsize=(2*2*num_cols,2*num_rows)) # first 2 is figsize, second 2 is two plots
+    figN.patch.set_facecolor('xkcd:white')
     for i in range(num_images):
         plt.subplot(num_rows,2*num_cols,2*i+1)
         plot_image(predictions[i],y_test[i],x_test[i])
@@ -323,7 +326,7 @@ plot_Nfigs(3,3,x_sample,y_sample,predictions)
 
 
     
-![png](doc/output_40_0.png)
+![png](output_40_0.png)
     
 
 
@@ -371,13 +374,13 @@ if N==9:
 ```
 
     10000
-    9820
-    180
+    9783
+    217
     9
     
 
 
     
-![png](doc/output_45_1.png)
+![png](output_45_1.png)
     
 
